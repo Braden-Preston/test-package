@@ -1,0 +1,22 @@
+{
+  "name": "bp-test-package",
+  "version": "1.0.0",
+  "description": "A test package for npm",
+  "author": "Braden Preston <bpfilmsinc@gmail.com>",
+  "license": "MIT",
+  "main": "dist/bundle.es.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Braden-Preston/test-package.git"
+  },
+  "scripts": {
+    "build": "esbuild index.js --bundle --minify --outfile=dist/bundle.es.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "esbuild": "^0.12.19"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.18"
+  }
+}
